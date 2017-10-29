@@ -14,8 +14,8 @@ HCOUNT=$(wc -l < $(pwd)/.776f726b.list)
 
 clear
 
-echo "${blue}HIRING (${green}$HCOUNT${blue}):${reset} "
-echo -n "${gold}$(cat $(pwd)/.776f726b.list)${reset}" | xxd -r -p
+echo "${blue}HIRING (${reset}$HCOUNT${blue}):${reset} "
+echo -n "$(cat $(pwd)/.776f726b.list)" | xxd -r -p
 echo " "
 
 read -s -n1
