@@ -22,7 +22,7 @@ JOB=($(cat $(pwd)/.776f726b.list))
 
 clear
 
-echo "${paper}${bold}${white}JOB PICK (${sky}1/$HCOUNT${white}): ${reset}"
+echo "${paper}${bold}${white}JOB CONTACT (${sky}1 of $HCOUNT${white}): ${reset}"
 echo -n "${blue}${JOB[$MIX]}${reset}" | xxd -r -p
 echo " " | pg
 
