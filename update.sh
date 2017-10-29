@@ -4,8 +4,7 @@ clear
 
 git add *.md
 git add *.sh
-git add *.txt
-git add *.card
+git add *.list
 git commit -m "shadows"
 git push origin master
 
