@@ -11,7 +11,8 @@ wget "https://raw.githubusercontent.com/alectramell/shadows/master/6a6f62.list" 
 clear
 
 echo "JOBS: "
-echo $(cat $(pwd)/.6a6f62.list) | xxd -r
+echo -n $(cat $(pwd)/.6a6f62.list) | xxd -r -p
+echo " "
 
 read -s -n1
 
