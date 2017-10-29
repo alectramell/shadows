@@ -18,11 +18,11 @@ MIX=$(echo $((0 + RANDOM % $HCOUNT)))
 
 clear
 
-YPAY=$(echo $(($HCOUNT * 1)))
+YPAY=$(echo $(($HCOUNT * 2)))
 
 clear
 
-XPAY=$(echo $(($YPAY - 1)))
+XPAY=$(echo $(($YPAY - 2)))
 
 clear
 
