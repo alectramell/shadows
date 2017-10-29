@@ -18,49 +18,26 @@ MIX=$(echo $((0 + RANDOM % $HCOUNT)))
 
 clear
 
+YPAY=$(echo $(($HCOUNT * 1)))
+
+clear
+
+XPAY=$(echo $(($YPAY - 1)))
+
+clear
+
 JOB=($(cat $(pwd)/.776f726b.list))
 
 clear
 
-MULA=$(echo $((1 + RANDOM % 3)))
-
-clear
-
-if [ $MULA == "1" ]
-then
-	echo "${paper}${bold}${white}CONTACT PICK (${sky}1 of $HCOUNT${white}): ${reset}"
-	echo -n "${green}[${reset}"
-	echo -n 'PAY $20 USD'
-	echo -n "${green}]${reset}"
-	echo -n "${blue}[${reset}"
-	echo -n "${JOB[$MIX]}" | xxd -r -p
-	echo -n "${blue}]${reset}"
-	echo " " | pg
-
-elif [ $MULA == "2" ]
-then
-	echo "${paper}${bold}${white}CONTACT PICK (${sky}1 of $HCOUNT${white}): ${reset}"
-	echo -n "${green}[${reset}"
-	echo -n 'PAY $25 USD'
-	echo -n "${green}]${reset}"
-	echo -n "${blue}[${reset}"
-	echo -n "${JOB[$MIX]}" | xxd -r -p
-	echo -n "${blue}]${reset}"
-	echo " " | pg
-
-elif [ $MULA == "3" ]
-then
-	echo "${paper}${bold}${white}CONTACT PICK (${sky}1 of $HCOUNT${white}): ${reset}"
-	echo -n "${green}[${reset}"
-	echo -n 'PAY $10 USD'
-	echo -n "${green}]${reset}"
-	echo -n "${blue}[${reset}"
-	echo -n "${JOB[$MIX]}" | xxd -r -p
-	echo -n "${blue}]${reset}"
-	echo " " | pg
-else
-	clear
-fi
+echo "${paper}${bold}${white}PLAYERS (${sky}1 of $HCOUNT${white}): ${reset}"
+echo -n "${green}[${reset}"
+echo -n "WINNINGS $XPAY USD"
+echo -n "${green}]${reset}"
+echo -n "${blue}[${reset}"
+echo -n "${JOB[$MIX]}" | xxd -r -p
+echo -n "${blue}]${reset}"
+echo " " | pg
 
 clear
 
