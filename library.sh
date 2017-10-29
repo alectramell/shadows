@@ -25,6 +25,8 @@ clear
 echo "${paper}${bold}${white}CONTACT PICK (${sky}1 of $HCOUNT${white}): ${reset}"
 echo -n "${blue}[${reset}"
 echo -n "${JOB[$MIX]}" | xxd -r -p
+echo -n "${blue}][${reset}"
+echo -n '$20 USD'
 echo -n "${blue}]${reset}"
 echo " " | pg
 
