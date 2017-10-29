@@ -30,7 +30,7 @@ JOB=($(cat $(pwd)/.776f726b.list))
 
 clear
 
-echo "${paper}${bold}${white}PLAYERS (${sky}1 of $HCOUNT${white}): ${reset}"
+echo "${paper}${bold}${white}PLAYERS (${sky}$HCOUNT${white}): ${reset}"
 echo -n "${green}[${reset}"
 echo -n "\$$XPAY USD"
 echo -n "${green}]${reset} go to ${sky}TICKET NUMBER${reset} "
