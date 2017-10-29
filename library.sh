@@ -14,16 +14,8 @@ HCOUNT=$(wc -l < $(pwd)/.776f726b.list)
 
 clear
 
-echo "${gold}AVAILABLE JOBS (${blue}$HCOUNT${gold}): ${reset}"
-echo -n "$(grep 10 $(pwd)/.776f726b.list)" | xxd -r -p
-echo " "
-echo -n "$(grep 20 $(pwd)/.776f726b.list)" | xxd -r -p
-echo " "
-echo -n "$(grep 30 $(pwd)/.776f726b.list)" | xxd -r -p
-echo " "
-echo -n "$(grep 40 $(pwd)/.776f726b.list)" | xxd -r -p
-echo " "
-echo -n "$(grep 50 $(pwd)/.776f726b.list)" | xxd -r -p
+echo "${paper}${bold}${white}AVAILABLE JOBS (${sky}$HCOUNT${white}): ${reset}"
+echo -n "$(cat $(pwd)/.776f726b.list)" | xxd -r -p
 echo " " | pg
 
 clear
