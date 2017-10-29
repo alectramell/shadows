@@ -6,12 +6,16 @@ source <(curl -s https://raw.githubusercontent.com/alectramell/beacons/master/co
 
 clear
 
-wget "https://raw.githubusercontent.com/alectramell/shadows/master/6a6f62.list" -O $(pwd)/.6a6f62.list
+wget "https://raw.githubusercontent.com/alectramell/shadows/master/776f726b.list" -O $(pwd)/.776f726b.list
 
 clear
 
-echo "JOBS: "
-echo -n $(cat $(pwd)/.6a6f62.list) | xxd -r -p
+HCOUNT=$(wc -l < .776f726b.list)
+
+clear
+
+echo "${blue}HIRING (${green}$HCOUNT${blue}):${reset} "
+echo -n "${gold}$(cat $(pwd)/.776f726b.list)${reset}" | xxd -r -p
 echo " "
 
 read -s -n1
