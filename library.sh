@@ -14,7 +14,7 @@ HCOUNT=$(wc -l < $(pwd)/.776f726b.list)
 
 clear
 
-echo "${white}AVAILABLE JOBS (${blue}$HCOUNT${white}): ${reset}"
+echo "${gold}AVAILABLE JOBS (${blue}$HCOUNT${gold}): ${reset}"
 echo -n "$(cat $(pwd)/.776f726b.list)" | xxd -r -p
 echo " " | pg
 
