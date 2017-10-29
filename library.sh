@@ -14,8 +14,16 @@ HCOUNT=$(wc -l < $(pwd)/.776f726b.list)
 
 clear
 
-echo "${paper}${bold}${white}AVAILABLE JOBS (${sky}$HCOUNT${white}): ${reset}"
-echo -n "$(cat $(pwd)/.776f726b.list)" | xxd -r -p
+MIX=$(echo $((0 + RANDOM % $HCOUNT)))
+
+clear
+
+JOB=($(cat $(pwd)/.776f726b.list))
+
+clear
+
+echo "${paper}${bold}${white}RENDERED JOB (${sky}$HCOUNT${white}): ${reset}"
+echo -n "${JOB[$MIX]}" | xxd -r -p
 echo " " | pg
 
 clear
