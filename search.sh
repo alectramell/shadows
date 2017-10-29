@@ -6,7 +6,7 @@ source <(curl -s https://raw.githubusercontent.com/alectramell/beacons/master/co
 
 clear
 
-CARD=$(curl -s https://raw.githubusercontent.com/alectramell/shadows/master/$1.card)
+CARD=$(<(curl -s https://raw.githubusercontent.com/alectramell/shadows/master/$1.card))
 
 clear
 
