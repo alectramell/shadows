@@ -10,7 +10,7 @@ wget "https://raw.githubusercontent.com/alectramell/shadows/master/776f726b.list
 
 clear
 
-HCOUNT=$(wc -l < .776f726b.list)
+HCOUNT=$(wc -l < $(pwd)/.776f726b.list)
 
 clear
 
@@ -22,6 +22,6 @@ read -s -n1
 
 clear
 
-rm $(pwd)/.6a6f62.list
+rm $(pwd)/.776f726b.list
 
 clear
