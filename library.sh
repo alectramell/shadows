@@ -32,8 +32,8 @@ clear
 
 echo "${paper}${bold}${white}PLAYERS (${sky}1 of $HCOUNT${white}): ${reset}"
 echo -n "${green}[${reset}"
-echo -n "WINNINGS $XPAY USD"
-echo -n "${green}]${reset}"
+echo -n "\$$XPAY USD"
+echo -n "${green}]${reset} goes to "
 echo -n "${blue}[${reset}"
 echo -n "${JOB[$MIX]}" | xxd -r -p
 echo -n "${blue}]${reset}"
