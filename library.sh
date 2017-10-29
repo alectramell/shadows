@@ -16,9 +16,7 @@ clear
 
 echo "${blue}HIRING (${reset}$HCOUNT${blue}):${reset} "
 echo -n "$(cat $(pwd)/.776f726b.list)" | xxd -r -p
-echo " "
-
-read -s -n1
+echo " " | pg
 
 clear
 
