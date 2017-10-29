@@ -6,11 +6,11 @@ source <(curl -s https://raw.githubusercontent.com/alectramell/beacons/master/co
 
 clear
 
-wget "https://raw.githubusercontent.com/alectramell/shadows/master/$1.card" -O $(pwd)/shadow.card
+wget "https://raw.githubusercontent.com/alectramell/shadows/master/$1.card" -O $(pwd)/.shadow.card
 
 clear
 
-CARD="$(pwd)/shadow.card"
+CARD="$(pwd)/.shadow.card"
 
 clear
 
@@ -27,8 +27,6 @@ read -n2 CONTINUE
 
 clear
 
-sleep 2.5
-
-rm $(pwd)/shadow.card
+rm $(pwd)/.shadow.card
 
 clear
