@@ -6,7 +6,11 @@ source <(curl -s https://raw.githubusercontent.com/alectramell/beacons/master/co
 
 clear
 
-CARD=$(<(curl -s https://raw.githubusercontent.com/alectramell/shadows/master/$1.card))
+wget -O $(pwd)/.shadow.card "https://raw.githubusercontent.com/alectramell/shadows/master/$1.card"
+
+clear
+
+CARD=$(cat $(pwd)/.shadow.card)
 
 clear
 
@@ -20,5 +24,9 @@ echo " "
 echo "${blue}CREDITS: ${gold}$VALUE${reset}"
 echo -n "${blue}PURCHASE CONTACT?${reset} (${green}y${reset}/${red}n${reset})${blue}:${reset} "
 read -n2 CONTINUE
+
+clear
+
+rm $(pwd)/.shadow.card
 
 clear
